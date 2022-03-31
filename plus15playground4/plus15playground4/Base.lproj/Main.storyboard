@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GQa-P2-wuU">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -8,20 +8,86 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Tab Bar Controller-->
+        <scene sceneID="bwU-Rq-Q5c">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="plus15playground4" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <tabBarController id="GQa-P2-wuU" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5gk-mI-ux5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="RNZ-yk-rxp" kind="relationship" relationship="viewControllers" id="wiu-qc-Lir"/>
+                        <segue destination="Sgb-yc-QaH" kind="relationship" relationship="viewControllers" id="Vk1-vo-JGX"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dfs-MC-wkB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13" y="231"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="vXj-nd-ibR">
+            <objects>
+                <viewController id="Sgb-yc-QaH" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JF4-UZ-2xD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="GoI-Aw-ZKp"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="About" id="8gm-r3-rC8"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rvA-DY-GFm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="131.8840579710145" y="114.50892857142857"/>
+            <point key="canvasLocation" x="809" y="623"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="wGL-wf-oI9">
+            <objects>
+                <viewController id="RNZ-yk-rxp" customClass="MapViewController" customModule="plus15playground4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qrl-ho-hDd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="KmY-sX-iGn">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gx0-hF-zfb">
+                                <rect key="frame" x="344" y="743" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="6Ht-WH-Np8"/>
+                                    <constraint firstAttribute="width" constant="50" id="B14-rf-Kn1"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="B">
+                                    <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="displayBuisnessesToggleButtonPressed:" destination="RNZ-yk-rxp" eventType="touchUpInside" id="hRW-Bh-IBR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pLU-kT-B1I"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pLU-kT-B1I" firstAttribute="trailing" secondItem="gx0-hF-zfb" secondAttribute="trailing" constant="20" id="DFB-JN-yHV"/>
+                            <constraint firstItem="pLU-kT-B1I" firstAttribute="bottom" secondItem="gx0-hF-zfb" secondAttribute="bottom" constant="20" id="E3P-4D-CBI"/>
+                            <constraint firstItem="KmY-sX-iGn" firstAttribute="bottom" secondItem="pLU-kT-B1I" secondAttribute="bottom" id="WaN-TT-eAc"/>
+                            <constraint firstItem="KmY-sX-iGn" firstAttribute="top" secondItem="Qrl-ho-hDd" secondAttribute="top" id="WwO-CT-19A"/>
+                            <constraint firstItem="KmY-sX-iGn" firstAttribute="trailing" secondItem="pLU-kT-B1I" secondAttribute="trailing" id="alW-y3-4YA"/>
+                            <constraint firstItem="KmY-sX-iGn" firstAttribute="leading" secondItem="pLU-kT-B1I" secondAttribute="leading" id="ptg-Zj-88a"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Map" id="mdZ-oF-sLh"/>
+                    <connections>
+                        <outlet property="displayBuisnessesToggleButton" destination="gx0-hF-zfb" id="dJE-NY-ltW"/>
+                        <outlet property="mapView" destination="KmY-sX-iGn" id="fGd-hP-IK5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jRt-DV-eAa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="808.69565217391312" y="-57.589285714285708"/>
         </scene>
     </scenes>
     <resources>
