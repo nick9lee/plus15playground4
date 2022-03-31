@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7A2BB18F27F2B3620084664F /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2BB18E27F2B3620084664F /* LocationManager.swift */; };
 		7A4B223A2797D684004190FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4B22392797D684004190FE /* AppDelegate.swift */; };
 		7A4B223C2797D684004190FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4B223B2797D684004190FE /* SceneDelegate.swift */; };
 		7A4B223E2797D684004190FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4B223D2797D684004190FE /* ViewController.swift */; };
@@ -15,10 +14,11 @@
 		7A4B22432797D688004190FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A4B22422797D688004190FE /* Assets.xcassets */; };
 		7A4B22462797D688004190FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A4B22442797D688004190FE /* LaunchScreen.storyboard */; };
 		7A4B224E2797D72A004190FE /* PointsOfInterest.json in Resources */ = {isa = PBXBuildFile; fileRef = 7A4B224D2797D72A004190FE /* PointsOfInterest.json */; };
+		7A4DB7DA27F2C2C8004A7C47 /* UserLocationAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4DB7D927F2C2C8004A7C47 /* UserLocationAnnotation.swift */; };
+		7A4DB7DC27F2C2F9004A7C47 /* UserLocationAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4DB7DB27F2C2F9004A7C47 /* UserLocationAnnotationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7A2BB18E27F2B3620084664F /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		7A4B22362797D684004190FE /* plus15playground4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = plus15playground4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A4B22392797D684004190FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A4B223B2797D684004190FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +28,8 @@
 		7A4B22452797D688004190FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A4B22472797D688004190FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A4B224D2797D72A004190FE /* PointsOfInterest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PointsOfInterest.json; sourceTree = "<group>"; };
+		7A4DB7D927F2C2C8004A7C47 /* UserLocationAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocationAnnotation.swift; sourceTree = "<group>"; };
+		7A4DB7DB27F2C2F9004A7C47 /* UserLocationAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocationAnnotationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,11 +66,12 @@
 				7A4B22392797D684004190FE /* AppDelegate.swift */,
 				7A4B223B2797D684004190FE /* SceneDelegate.swift */,
 				7A4B223D2797D684004190FE /* ViewController.swift */,
-				7A2BB18E27F2B3620084664F /* LocationManager.swift */,
 				7A4B223F2797D684004190FE /* Main.storyboard */,
 				7A4B22422797D688004190FE /* Assets.xcassets */,
 				7A4B22442797D688004190FE /* LaunchScreen.storyboard */,
 				7A4B22472797D688004190FE /* Info.plist */,
+				7A4DB7D927F2C2C8004A7C47 /* UserLocationAnnotation.swift */,
+				7A4DB7DB27F2C2F9004A7C47 /* UserLocationAnnotationView.swift */,
 			);
 			path = plus15playground4;
 			sourceTree = "<group>";
@@ -145,10 +148,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A2BB18F27F2B3620084664F /* LocationManager.swift in Sources */,
 				7A4B223E2797D684004190FE /* ViewController.swift in Sources */,
 				7A4B223A2797D684004190FE /* AppDelegate.swift in Sources */,
+				7A4DB7DA27F2C2C8004A7C47 /* UserLocationAnnotation.swift in Sources */,
 				7A4B223C2797D684004190FE /* SceneDelegate.swift in Sources */,
+				7A4DB7DC27F2C2F9004A7C47 /* UserLocationAnnotationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
