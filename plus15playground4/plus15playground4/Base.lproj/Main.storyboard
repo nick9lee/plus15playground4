@@ -15,34 +15,9 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="2Tk-eL-EHb">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                            </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gnJ-fW-WLf">
-                                <rect key="frame" x="347" y="44" width="67" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                <connections>
-                                    <action selector="buttonpressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Snq-eK-dex"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="2Tk-eL-EHb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="JBR-MY-fC0"/>
-                            <constraint firstAttribute="bottom" secondItem="2Tk-eL-EHb" secondAttribute="bottom" id="QPj-Ov-jsU"/>
-                            <constraint firstItem="2Tk-eL-EHb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="UEI-Ci-TnX"/>
-                            <constraint firstItem="2Tk-eL-EHb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Y60-az-4UG"/>
-                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="button" destination="gnJ-fW-WLf" id="Gip-1V-deW"/>
-                        <outlet property="mapView" destination="2Tk-eL-EHb" id="jIb-K4-sjp"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
